@@ -9,39 +9,59 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
 		<!-- własne skrypty -->
+    <script type="text/javascript" src="en_UK.json"></script>
+		<script type="text/javascript" src="ipa_to_tipa_xlate.json"></script>
+    
 		<script type="text/javascript" src="PhoneticTranscription.js"></script>
 		<!-- własne style -->
-		<style>
-			body {background-color: LightGray;}
-			input {width: 100%;}
-		</style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 	</head>
-
-	<div class="row">
-		<div class="col-8 offset-2">
-			<h1 class="d-flex justify-content-center">Phonetic Transcription</h1>
-			<div class="row">
-				<div class="col">
-					<div class="form-group">
-						<label for="text">Enter text:</label>
-						<textarea class="form-control" rows="3" id="text"></textarea>
-					</div>
-					<div class="d-flex justify-content-center">
-						<button type="button" onclick="transcribe();">Transcribe</button>
+	<div style="position: fixed" class="h-100 w-100 d-flex flex-column">
+		<div class="row">
+			<div class="col-8 offset-2">
+				<h1 class="d-flex justify-content-center">Phonetic Transcription</h1>
+				<div class="row">
+					<div class="col">
+						<div class="form-group">
+							<label for="text">Enter text:</label>
+							<textarea class="form-control" rows="3" id="text"></textarea>
+						</div>
+						<div class="d-flex justify-content-center">
+							<button type="button" onclick="transcribe();">Transcribe</button>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row mt-3">
-				<div class="col d-flex flex-column">
-					<label for="IPA">IPA Transcription</label>
-					<textarea readonly rows="3" id="IPA"></textarea>
-				</div>
-				<div class="col d-flex flex-column">
-					<label for="TIPA">TIPA Transcription</label>
-					<textarea readonly rows="3" id="TIPA"></textarea>
+				<div class="row mt-3">
+					<div class="col d-flex flex-column">
+						<label for="IPA">IPA Transcription</label>
+						<textarea readonly rows="3" id="IPA"></textarea>
+					</div>
+					<div class="col d-flex flex-column">
+						<label for="TIPA">TIPA Transcription</label>
+						<textarea readonly rows="3" id="TIPA"></textarea>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="mt-auto pt-2 pb-2 d-flex justify-content-center flex-wrap footer">
+			<div class="mx-2 d-flex flex-column">
+				<name>Patrycja Brzezińska</name>
+				<email>patrycjabrzezinska996@gmail.com</email>
+			</div>
+			<div class="mx-2 d-flex flex-column">
+				<name>Kinga Straszkiewicz</name>
+				<email>kinga.straszkiewicz@wp.pl</email>
+			</div>
+			<div class="mx-2 d-flex flex-column">
+				<name>Patrycja Brzezińska</name>
+				<email>patrycjabrzezinska996@gmail.com</email>
+			</div>
+			<div class="mx-2 d-flex flex-column">
+				<name>Patrycja Brzezińska</name>
+				<email>patrycjabrzezinska996@gmail.com</email>
+			</div>
+		</div>
 	</div>
+	
 </body>
 </html> 

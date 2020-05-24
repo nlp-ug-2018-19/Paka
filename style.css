@@ -1,0 +1,16 @@
+body {
+  background-color: LightGray;
+  }
+input {
+  width: 100%;
+  }
+email {
+  font-size: 12px;
+}
+name {
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer {
+  background-color: #bfbfbf;
+}
