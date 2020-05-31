@@ -1,6 +1,6 @@
 function transcribe() {
   var myText = document.getElementById("text");
-  var rawText = myText.value.trim();
+  var rawText = myText.value.trim().replace(/[~`!@#$%^&*(){}\[\];:"'<,.>?\/\\|_+=-]/g,"");
   var ipa = document.getElementById("IPA");
   var tipa = document.getElementById("TIPA");
   ipa.value = phoneticTranscription(rawText);
